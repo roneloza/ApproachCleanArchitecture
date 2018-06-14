@@ -1,0 +1,56 @@
+PODS:
+  - Alamofire (4.7.2)
+  - IQKeyboardManager (6.0.3)
+  - ISO8601 (1.0.0)
+  - KeychainAccess (3.1.1)
+  - NVActivityIndicatorView (4.2.1):
+    - NVActivityIndicatorView/Presenter (= 4.2.1)
+  - NVActivityIndicatorView/Presenter (4.2.1)
+  - RxSwift (4.1.2)
+  - SDWebImage (4.3.3):
+    - SDWebImage/Core (= 4.3.3)
+  - SDWebImage/Core (4.3.3)
+  - Shimmer (1.0.2)
+
+DEPENDENCIES:
+  - Alamofire
+  - IQKeyboardManager
+  - ISO8601 (from `https://github.com/onmyway133/ISO8601`)
+  - KeychainAccess
+  - NVActivityIndicatorView
+  - RxSwift
+  - SDWebImage
+  - Shimmer
+
+SPEC REPOS:
+  https://github.com/cocoapods/specs.git:
+    - Alamofire
+    - IQKeyboardManager
+    - KeychainAccess
+    - NVActivityIndicatorView
+    - RxSwift
+    - SDWebImage
+    - Shimmer
+
+EXTERNAL SOURCES:
+  ISO8601:
+    :git: https://github.com/onmyway133/ISO8601
+
+CHECKOUT OPTIONS:
+  ISO8601:
+    :commit: 8d6bcf4d4a2545c91089d43c488c81f74fbb5737
+    :git: https://github.com/onmyway133/ISO8601
+
+SPEC CHECKSUMS:
+  Alamofire: e4fa87002c137ba2d8d634d2c51fabcda0d5c223
+  IQKeyboardManager: c390e612f4b98c8fd748016470138537dc163ead
+  ISO8601: 391dc12552caab4f42b86df1c56cae0bb63c74c6
+  KeychainAccess: 7bd430028059754a3debab3cfc0bd1fc7fb85df3
+  NVActivityIndicatorView: 8068ba3ad39cb44cbaab25d89ff2546b3f092681
+  RxSwift: e49536837d9901277638493ea537394d4b55f570
+  SDWebImage: de4d90b5bff3571eae7bd16202b1f43135409fa5
+  Shimmer: c5374be1c2b0c9e292fb05b339a513cf291cac86
+
+PODFILE CHECKSUM: 3e1d925644a48ccae4308b8c9b7eed21bc7008ce
+
+COCOAPODS: 1.5.2
