@@ -36,20 +36,7 @@ protocol TextFieldStyle {
     var dxInset: CGFloat {set get}
 }
 
-@IBDesignable class UITextFieldCustom: UITextField {
-    
-    override func textRect(forBounds bounds: CGRect) -> CGRect {
-        
-        return bounds.insetBy(dx: self.dxInset, dy: 0.0)
-    }
-    
-    override func editingRect(forBounds bounds: CGRect) -> CGRect {
-        
-        return bounds.insetBy(dx: self.dxInset, dy: 0.0)
-    }
-}
-
-@IBDesignable extension UITextField: TextFieldStyle {
+extension UITextField: TextFieldStyle {
     
     @IBInspectable var dxInset: CGFloat {
         
@@ -66,7 +53,7 @@ protocol TextFieldStyle {
     }
 }
 
-@IBDesignable extension UITextField: TextFieldInputValidable {
+extension UITextField: TextFieldInputValidable {
     
     private struct AssociatedKeys {
         static var configuration = "configuration"
@@ -256,5 +243,18 @@ protocol TextFieldStyle {
             
             self.text = text
         }
+    }
+}
+
+@IBDesignable class UITextFieldCustom: UITextField {
+    
+    override func textRect(forBounds bounds: CGRect) -> CGRect {
+        
+        return bounds.insetBy(dx: self.dxInset, dy: 0.0)
+    }
+    
+    override func editingRect(forBounds bounds: CGRect) -> CGRect {
+        
+        return bounds.insetBy(dx: self.dxInset, dy: 0.0)
     }
 }
