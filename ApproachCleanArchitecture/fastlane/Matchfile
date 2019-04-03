@@ -8,5 +8,5 @@ app_identifier 'test.mambo.fastlaneDemo'
 username "rone.loza@gmail.com" #This will be the git username
 shallow_clone true
 force_for_new_devices true
-ENV["FASTLANE_PASSWORD"] = "comercio2014" #Password to access git repo.
-ENV["MATCH_PASSWORD"] = "comercio2014" #Password for the .p12 files saved in git repo.
+ENV["FASTLANE_PASSWORD"] = "gasparin1123" #Password to access git repo.
+ENV["MATCH_PASSWORD"] = "gasparin1123" #Password for the .p12 files saved in git repo.
