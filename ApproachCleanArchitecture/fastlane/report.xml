@@ -5,24 +5,99 @@
     
     
       
-      <testcase classname="fastlane.lanes" name="0: Verifying fastlane version" time="0.011851">
+      <testcase classname="fastlane.lanes" name="00: Verifying fastlane version" time="0.010979">
         
       </testcase>
     
       
-      <testcase classname="fastlane.lanes" name="1: default_platform" time="0.004114">
+      <testcase classname="fastlane.lanes" name="01: default_platform" time="0.003697">
         
       </testcase>
     
       
-      <testcase classname="fastlane.lanes" name="2: cocoapods" time="9.225257">
+      <testcase classname="fastlane.lanes" name="02: cocoapods" time="9.556015">
         
       </testcase>
     
       
-      <testcase classname="fastlane.lanes" name="3: ensure_git_status_clean" time="0.113335">
+      <testcase classname="fastlane.lanes" name="03: Switch to ios increment_build_and_version_numbers lane" time="0.009697">
         
-          <failure message="/Users/roneloza/.fastlane/bin/bundle/lib/ruby/gems/2.2.0/gems/fastlane-2.119.0/fastlane/lib/fastlane/actions/actions_helper.rb:48:in `execute_action'&#10;/Users/roneloza/.fastlane/bin/bundle/lib/ruby/gems/2.2.0/gems/fastlane-2.119.0/fastlane/lib/fastlane/runner.rb:232:in `block in execute_action'&#10;/Users/roneloza/.fastlane/bin/bundle/lib/ruby/gems/2.2.0/gems/fastlane-2.119.0/fastlane/lib/fastlane/runner.rb:227:in `chdir'&#10;/Users/roneloza/.fastlane/bin/bundle/lib/ruby/gems/2.2.0/gems/fastlane-2.119.0/fastlane/lib/fastlane/runner.rb:227:in `execute_action'&#10;/Users/roneloza/.fastlane/bin/bundle/lib/ruby/gems/2.2.0/gems/fastlane-2.119.0/fastlane/lib/fastlane/runner.rb:157:in `trigger_action_by_name'&#10;/Users/roneloza/.fastlane/bin/bundle/lib/ruby/gems/2.2.0/gems/fastlane-2.119.0/fastlane/lib/fastlane/fast_file.rb:154:in `method_missing'&#10;Fastfile:36:in `block (2 levels) in parsing_binding'&#10;/Users/roneloza/.fastlane/bin/bundle/lib/ruby/gems/2.2.0/gems/fastlane-2.119.0/fastlane/lib/fastlane/runner.rb:281:in `call'&#10;/Users/roneloza/.fastlane/bin/bundle/lib/ruby/gems/2.2.0/gems/fastlane-2.119.0/fastlane/lib/fastlane/runner.rb:281:in `execute_flow_block'&#10;/Users/roneloza/.fastlane/bin/bundle/lib/ruby/gems/2.2.0/gems/fastlane-2.119.0/fastlane/lib/fastlane/runner.rb:46:in `block in execute'&#10;/Users/roneloza/.fastlane/bin/bundle/lib/ruby/gems/2.2.0/gems/fastlane-2.119.0/fastlane/lib/fastlane/runner.rb:45:in `chdir'&#10;/Users/roneloza/.fastlane/bin/bundle/lib/ruby/gems/2.2.0/gems/fastlane-2.119.0/fastlane/lib/fastlane/runner.rb:45:in `execute'&#10;/Users/roneloza/.fastlane/bin/bundle/lib/ruby/gems/2.2.0/gems/fastlane-2.119.0/fastlane/lib/fastlane/lane_manager.rb:56:in `cruise_lane'&#10;/Users/roneloza/.fastlane/bin/bundle/lib/ruby/gems/2.2.0/gems/fastlane-2.119.0/fastlane/lib/fastlane/command_line_handler.rb:36:in `handle'&#10;/Users/roneloza/.fastlane/bin/bundle/lib/ruby/gems/2.2.0/gems/fastlane-2.119.0/fastlane/lib/fastlane/commands_generator.rb:108:in `block (2 levels) in run'&#10;/Users/roneloza/.fastlane/bin/bundle/lib/ruby/gems/2.2.0/gems/commander-fastlane-4.4.6/lib/commander/command.rb:178:in `call'&#10;/Users/roneloza/.fastlane/bin/bundle/lib/ruby/gems/2.2.0/gems/commander-fastlane-4.4.6/lib/commander/command.rb:178:in `call'&#10;/Users/roneloza/.fastlane/bin/bundle/lib/ruby/gems/2.2.0/gems/commander-fastlane-4.4.6/lib/commander/command.rb:153:in `run'&#10;/Users/roneloza/.fastlane/bin/bundle/lib/ruby/gems/2.2.0/gems/commander-fastlane-4.4.6/lib/commander/runner.rb:476:in `run_active_command'&#10;/Users/roneloza/.fastlane/bin/bundle/lib/ruby/gems/2.2.0/gems/fastlane-2.119.0/fastlane_core/lib/fastlane_core/ui/fastlane_runner.rb:76:in `run!'&#10;/Users/roneloza/.fastlane/bin/bundle/lib/ruby/gems/2.2.0/gems/commander-fastlane-4.4.6/lib/commander/delegates.rb:15:in `run!'&#10;/Users/roneloza/.fastlane/bin/bundle/lib/ruby/gems/2.2.0/gems/fastlane-2.119.0/fastlane/lib/fastlane/commands_generator.rb:333:in `run'&#10;/Users/roneloza/.fastlane/bin/bundle/lib/ruby/gems/2.2.0/gems/fastlane-2.119.0/fastlane/lib/fastlane/commands_generator.rb:41:in `start'&#10;/Users/roneloza/.fastlane/bin/bundle/lib/ruby/gems/2.2.0/gems/fastlane-2.119.0/fastlane/lib/fastlane/cli_tools_distributor.rb:119:in `take_off'&#10;/Users/roneloza/.fastlane/bin/bundle/lib/ruby/gems/2.2.0/gems/fastlane-2.119.0/bin/fastlane:23:in `&lt;top (required)&gt;'&#10;/Users/roneloza/.fastlane/bin/bundle/bin/fastlane:22:in `load'&#10;/Users/roneloza/.fastlane/bin/bundle/bin/fastlane:22:in `&lt;main&gt;'&#10;&#10;Git repository is dirty! Please ensure the repo is in a clean state by committing/stashing/discarding all changes first." />
+      </testcase>
+    
+      
+      <testcase classname="fastlane.lanes" name="04: get_info_plist_value" time="0.014137">
+        
+      </testcase>
+    
+      
+      <testcase classname="fastlane.lanes" name="05: get_build_number" time="0.829309">
+        
+      </testcase>
+    
+      
+      <testcase classname="fastlane.lanes" name="06: increment_build_number" time="2.429575">
+        
+      </testcase>
+    
+      
+      <testcase classname="fastlane.lanes" name="07: get_build_number" time="0.60789">
+        
+      </testcase>
+    
+      
+      <testcase classname="fastlane.lanes" name="08: get_version_number" time="0.237204">
+        
+      </testcase>
+    
+      
+      <testcase classname="fastlane.lanes" name="09: set_info_plist_value" time="0.011258">
+        
+      </testcase>
+    
+      
+      <testcase classname="fastlane.lanes" name="10: Switch to ios archive_adhoc lane" time="0.004717">
+        
+      </testcase>
+    
+      
+      <testcase classname="fastlane.lanes" name="11: build_app" time="211.472388">
+        
+      </testcase>
+    
+      
+      <testcase classname="fastlane.lanes" name="12: Switch to ios upload_to_crashlytics lane" time="0.008046">
+        
+      </testcase>
+    
+      
+      <testcase classname="fastlane.lanes" name="13: crashlytics" time="4.560607">
+        
+      </testcase>
+    
+      
+      <testcase classname="fastlane.lanes" name="14: upload_symbols_to_crashlytics" time="2.185905">
+        
+      </testcase>
+    
+      
+      <testcase classname="fastlane.lanes" name="15: Switch to ios commit_beta_version lane" time="0.004779">
+        
+      </testcase>
+    
+      
+      <testcase classname="fastlane.lanes" name="16: get_version_number" time="0.170311">
+        
+      </testcase>
+    
+      
+      <testcase classname="fastlane.lanes" name="17: git commit -am 'Fabric Beta version: 1.0'" time="0.243359">
+        
+      </testcase>
+    
+      
+      <testcase classname="fastlane.lanes" name="18: git tag -a v1.0 -m 'Fabric Beta'" time="0.035003">
+        
+          <failure message="/Users/roneloza/.fastlane/bin/bundle/lib/ruby/gems/2.2.0/gems/fastlane-2.119.0/fastlane/lib/fastlane/actions/actions_helper.rb:48:in `execute_action'&#10;/Users/roneloza/.fastlane/bin/bundle/lib/ruby/gems/2.2.0/gems/fastlane-2.119.0/fastlane/lib/fastlane/fast_file.rb:191:in `sh'&#10;/Users/roneloza/.fastlane/bin/bundle/lib/ruby/gems/2.2.0/gems/fastlane-2.119.0/fastlane/lib/fastlane/fast_file.rb:186:in `sh'&#10;Fastfile:99:in `block (2 levels) in parsing_binding'&#10;/Users/roneloza/.fastlane/bin/bundle/lib/ruby/gems/2.2.0/gems/fastlane-2.119.0/fastlane/lib/fastlane/lane.rb:33:in `call'&#10;/Users/roneloza/.fastlane/bin/bundle/lib/ruby/gems/2.2.0/gems/fastlane-2.119.0/fastlane/lib/fastlane/lane.rb:33:in `call'&#10;/Users/roneloza/.fastlane/bin/bundle/lib/ruby/gems/2.2.0/gems/fastlane-2.119.0/fastlane/lib/fastlane/runner.rb:204:in `try_switch_to_lane'&#10;/Users/roneloza/.fastlane/bin/bundle/lib/ruby/gems/2.2.0/gems/fastlane-2.119.0/fastlane/lib/fastlane/runner.rb:146:in `trigger_action_by_name'&#10;/Users/roneloza/.fastlane/bin/bundle/lib/ruby/gems/2.2.0/gems/fastlane-2.119.0/fastlane/lib/fastlane/fast_file.rb:154:in `method_missing'&#10;Fastfile:119:in `block (2 levels) in parsing_binding'&#10;/Users/roneloza/.fastlane/bin/bundle/lib/ruby/gems/2.2.0/gems/fastlane-2.119.0/fastlane/lib/fastlane/lane.rb:33:in `call'&#10;/Users/roneloza/.fastlane/bin/bundle/lib/ruby/gems/2.2.0/gems/fastlane-2.119.0/fastlane/lib/fastlane/lane.rb:33:in `call'&#10;/Users/roneloza/.fastlane/bin/bundle/lib/ruby/gems/2.2.0/gems/fastlane-2.119.0/fastlane/lib/fastlane/runner.rb:49:in `block in execute'&#10;/Users/roneloza/.fastlane/bin/bundle/lib/ruby/gems/2.2.0/gems/fastlane-2.119.0/fastlane/lib/fastlane/runner.rb:45:in `chdir'&#10;/Users/roneloza/.fastlane/bin/bundle/lib/ruby/gems/2.2.0/gems/fastlane-2.119.0/fastlane/lib/fastlane/runner.rb:45:in `execute'&#10;/Users/roneloza/.fastlane/bin/bundle/lib/ruby/gems/2.2.0/gems/fastlane-2.119.0/fastlane/lib/fastlane/lane_manager.rb:56:in `cruise_lane'&#10;/Users/roneloza/.fastlane/bin/bundle/lib/ruby/gems/2.2.0/gems/fastlane-2.119.0/fastlane/lib/fastlane/command_line_handler.rb:36:in `handle'&#10;/Users/roneloza/.fastlane/bin/bundle/lib/ruby/gems/2.2.0/gems/fastlane-2.119.0/fastlane/lib/fastlane/commands_generator.rb:108:in `block (2 levels) in run'&#10;/Users/roneloza/.fastlane/bin/bundle/lib/ruby/gems/2.2.0/gems/commander-fastlane-4.4.6/lib/commander/command.rb:178:in `call'&#10;/Users/roneloza/.fastlane/bin/bundle/lib/ruby/gems/2.2.0/gems/commander-fastlane-4.4.6/lib/commander/command.rb:178:in `call'&#10;/Users/roneloza/.fastlane/bin/bundle/lib/ruby/gems/2.2.0/gems/commander-fastlane-4.4.6/lib/commander/command.rb:153:in `run'&#10;/Users/roneloza/.fastlane/bin/bundle/lib/ruby/gems/2.2.0/gems/commander-fastlane-4.4.6/lib/commander/runner.rb:476:in `run_active_command'&#10;/Users/roneloza/.fastlane/bin/bundle/lib/ruby/gems/2.2.0/gems/fastlane-2.119.0/fastlane_core/lib/fastlane_core/ui/fastlane_runner.rb:76:in `run!'&#10;/Users/roneloza/.fastlane/bin/bundle/lib/ruby/gems/2.2.0/gems/commander-fastlane-4.4.6/lib/commander/delegates.rb:15:in `run!'&#10;/Users/roneloza/.fastlane/bin/bundle/lib/ruby/gems/2.2.0/gems/fastlane-2.119.0/fastlane/lib/fastlane/commands_generator.rb:333:in `run'&#10;/Users/roneloza/.fastlane/bin/bundle/lib/ruby/gems/2.2.0/gems/fastlane-2.119.0/fastlane/lib/fastlane/commands_generator.rb:41:in `start'&#10;/Users/roneloza/.fastlane/bin/bundle/lib/ruby/gems/2.2.0/gems/fastlane-2.119.0/fastlane/lib/fastlane/cli_tools_distributor.rb:119:in `take_off'&#10;/Users/roneloza/.fastlane/bin/bundle/lib/ruby/gems/2.2.0/gems/fastlane-2.119.0/bin/fastlane:23:in `&lt;top (required)&gt;'&#10;/Users/roneloza/.fastlane/bin/bundle/bin/fastlane:22:in `load'&#10;/Users/roneloza/.fastlane/bin/bundle/bin/fastlane:22:in `&lt;main&gt;'&#10;&#10;Exit status of command 'git tag -a v1.0 -m 'Fabric Beta'' was 128 instead of 0.&#10;fatal: tag 'v1.0' already exists&#10;" />
         
       </testcase>
     

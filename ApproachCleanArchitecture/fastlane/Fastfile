@@ -91,13 +91,18 @@ platform :ios do
     end
     
     lane :commit_beta_version do
+        
+        build_number = get_build_number
+        
         version = get_version_number(
                                      target: "#{project_scheme}",
-                                     xcodeproj: "#{xcodeproj}",
+                                     xcodeproj: "#{xcodeproj}"
                                      )
-                                     sh "git commit -am 'Fabric Beta version: #{version}'"
-                                     sh "git tag -a v#{version} -m 'Fabric Beta'"
-                                     sh "git push"
+        commitVersion = "#{version}(#{build_number})”
+                                     
+        sh "git commit -am 'Fabric Beta version: #{commitVersion}'"
+        sh "git tag -a v#{commitVersion} -m 'Fabric Beta'"
+        sh "git push"
     end
     
     desc "Generate a custom icon overlay"
