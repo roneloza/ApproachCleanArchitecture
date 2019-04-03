@@ -20,9 +20,9 @@ project_info_plist = "#{project_name}/Info.plist"
 git_url = "git@github.com:roneloza/ApproachCleanArchitecture.git"
 
 #Crashlytics
-crashlytics_api_token = "21e506bee6ee027e38e209c4c409197e26624a33"
-crashlytics_build_secret = "40964294b329d3cb49fa71addc6ecc3d766c054fd213740912f09fd381019faf"
-crashlytics_emails = ["rone.loza@mambo.pe"]
+crashlytics_api_token = "aaae02e59450e7b181028018790517df300a907e"
+crashlytics_build_secret = "256141661a7717eacee1649d247a28cc31ac6d8c55b9fb291a46caf00201fab4"
+crashlytics_emails = ["rone.loza@mambo.pe", "rone.loza@gmail.com", "rone.loza.aliaga@gmail.com"]
 
 #update_fastlane
 fastlane_version "2.9.0"

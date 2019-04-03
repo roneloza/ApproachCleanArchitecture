@@ -65,8 +65,8 @@ PODS:
 
 DEPENDENCIES:
   - Alamofire
-  - Crashlytics (~> 3.12.0)
-  - Fabric (~> 1.9.0)
+  - Crashlytics
+  - Fabric
   - Firebase/Core
   - IQKeyboardManager
   - ISO8601 (from `https://github.com/onmyway133/ISO8601`)
@@ -120,6 +120,6 @@ SPEC CHECKSUMS:
   SDWebImage: de4d90b5bff3571eae7bd16202b1f43135409fa5
   Shimmer: c5374be1c2b0c9e292fb05b339a513cf291cac86
 
-PODFILE CHECKSUM: e5759cd84b5eed83630575b4c60ec7b9dfa06905
+PODFILE CHECKSUM: 68b47c46f51003f25396373d02f888ebf2b0f6d5
 
 COCOAPODS: 1.6.1

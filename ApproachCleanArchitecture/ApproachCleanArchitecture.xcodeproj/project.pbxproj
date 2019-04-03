@@ -785,7 +785,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "\"${PODS_ROOT}/Fabric/run\" 21e506bee6ee027e38e209c4c409197e26624a33 40964294b329d3cb49fa71addc6ecc3d766c054fd213740912f09fd381019faf\n";
+			shellScript = "\"${PODS_ROOT}/Fabric/run\" aaae02e59450e7b181028018790517df300a907e 256141661a7717eacee1649d247a28cc31ac6d8c55b9fb291a46caf00201fab4\n";
 		};
 		3262421276F3280E40FD0FA4 /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
@@ -1103,7 +1103,8 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				CODE_SIGN_STYLE = Manual;
-				CURRENT_PROJECT_VERSION = 56;
+				CURRENT_PROJECT_VERSION = 57;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
 				DEVELOPMENT_TEAM = 2H7JJNVPU3;
 				INFOPLIST_FILE = ApproachCleanArchitecture/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -1126,7 +1127,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_IDENTITY = "iPhone Distribution";
 				CODE_SIGN_STYLE = Manual;
-				CURRENT_PROJECT_VERSION = 56;
+				CURRENT_PROJECT_VERSION = 57;
 				DEVELOPMENT_TEAM = 2H7JJNVPU3;
 				INFOPLIST_FILE = ApproachCleanArchitecture/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
