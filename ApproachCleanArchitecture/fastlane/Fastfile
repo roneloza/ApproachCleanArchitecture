@@ -98,7 +98,7 @@ platform :ios do
                                      target: "#{project_scheme}",
                                      xcodeproj: "#{xcodeproj}"
                                      )
-        commitVersion = "#{version}(#{build_number})”
+        commitVersion = "#{version}.#{build_number}”
                                      
         sh "git commit -am 'Fabric Beta version: #{commitVersion}'"
         sh "git tag -a v#{commitVersion} -m 'Fabric Beta'"
