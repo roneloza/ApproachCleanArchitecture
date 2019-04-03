@@ -122,6 +122,6 @@ platform :ios do
         #refresh_dsyms
         upload_to_crashlytics
         commit_beta_version
-        #custom_overlay
+        custom_overlay
     end
 end
