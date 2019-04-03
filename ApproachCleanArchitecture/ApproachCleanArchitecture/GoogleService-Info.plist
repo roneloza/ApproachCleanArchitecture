@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>CLIENT_ID</key>
+	<string>939946972830-vs85krk9fpa8223s1itc2hfldkdla1e1.apps.googleusercontent.com</string>
+	<key>REVERSED_CLIENT_ID</key>
+	<string>com.googleusercontent.apps.939946972830-vs85krk9fpa8223s1itc2hfldkdla1e1</string>
+	<key>API_KEY</key>
+	<string>AIzaSyCcl6EsD5X2obaL_heNXb79VVcuKsb8bOs</string>
+	<key>GCM_SENDER_ID</key>
+	<string>939946972830</string>
+	<key>PLIST_VERSION</key>
+	<string>1</string>
+	<key>BUNDLE_ID</key>
+	<string>test.mambo.fastlaneDemo</string>
+	<key>PROJECT_ID</key>
+	<string>fastlanedemo-3ff75</string>
+	<key>STORAGE_BUCKET</key>
+	<string>fastlanedemo-3ff75.appspot.com</string>
+	<key>IS_ADS_ENABLED</key>
+	<false></false>
+	<key>IS_ANALYTICS_ENABLED</key>
+	<false></false>
+	<key>IS_APPINVITE_ENABLED</key>
+	<true></true>
+	<key>IS_GCM_ENABLED</key>
+	<true></true>
+	<key>IS_SIGNIN_ENABLED</key>
+	<true></true>
+	<key>GOOGLE_APP_ID</key>
+	<string>1:939946972830:ios:ebc4becf428c5299</string>
+	<key>DATABASE_URL</key>
+	<string>https://fastlanedemo-3ff75.firebaseio.com</string>
+</dict>
+</plist>

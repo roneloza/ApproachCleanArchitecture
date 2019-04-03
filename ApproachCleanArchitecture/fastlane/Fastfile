@@ -1,0 +1,122 @@
+# Customise this file, documentation can be found here:
+# https://github.com/fastlane/fastlane/tree/master/fastlane/docs
+# All available actions: https://docs.fastlane.tools/actions
+# can also be listed using the `fastlane actions` command
+
+# Change the syntax highlighting to Ruby
+# All lines starting with a # are ignored when running `fastlane`
+
+#Globals
+prefix_dir = "./"
+project_name = "ApproachCleanArchitecture"
+project_dir = "#{prefix_dir}#{project_name}/"
+project_scheme = "#{project_name}"
+project_output_name = "#{project_scheme}_AdHoc"
+project_bundle_identifier = "test.mambo.fastlaneDemo"
+xcodeproj = "#{prefix_dir}#{project_name}.xcodeproj"
+workspace = "#{prefix_dir}#{project_name}.xcworkspace"
+build_dir = "./build"
+project_info_plist = "#{project_name}/Info.plist"
+git_url = "git@github.com:roneloza/ApproachCleanArchitecture.git"
+
+#Crashlytics
+crashlytics_api_token = "21e506bee6ee027e38e209c4c409197e26624a33"
+crashlytics_build_secret = "40964294b329d3cb49fa71addc6ecc3d766c054fd213740912f09fd381019faf"
+crashlytics_emails = ["rone.loza@mambo.pe"]
+
+#update_fastlane
+fastlane_version "2.9.0"
+
+default_platform :ios
+
+platform :ios do
+    before_all do
+        #cocoapods
+        cocoapods(use_bundle_exec: false)
+        #ensure_git_status_clean
+        
+    end
+    
+    lane :increment_build_and_version_numbers do
+        
+        checkNewVersionStart = get_info_plist_value(path: "#{project_info_plist}", key: "CFBundleVersion")
+        if checkNewVersionStart == "0"
+            increment_build_number(
+                                   build_number: "0"
+                                   )
+        end
+        
+        formerNumber = get_build_number
+        
+        increment_build_number
+        build_number = get_build_number
+        version = get_version_number
+        
+        formerVersion = "#{version}-b#{formerNumber}”
+        commitVersion = "#{version}-b#{build_number}”
+        
+        set_info_plist_value(path: "#{project_info_plist}", key: "CFBundleVersion", value: build_number)
+    end
+    
+    lane :archive_adhoc do
+        Dir.mkdir("../#{build_dir}") unless File.exists?("../#{build_dir}")
+        
+        build_app(
+                  scheme: "#{project_scheme}",
+                  output_name: "#{project_output_name}",
+                  workspace: "#{workspace}",
+                  configuration: "Debug",
+                  export_method: "development",
+                  output_directory: "#{build_dir}",
+                  clean: true,
+                  include_bitcode: false
+                  )
+    end
+    
+    lane :refresh_dsyms do
+        
+        download_dsyms                  # Download dSYM files from iTC
+        upload_symbols_to_crashlytics   # Upload them to Crashlytics
+        #clean_build_artifacts           # Delete the local dSYM files
+    end
+    
+    lane :upload_to_crashlytics do
+        
+        crashlytics(
+                    api_token: "#{crashlytics_api_token}",
+                    build_secret: "#{crashlytics_build_secret}",
+                    emails: "#{crashlytics_emails}"
+                    )
+                    upload_symbols_to_crashlytics(dsym_path: "#{project_bundle_identifier}.dSYM.zip")
+    end
+    
+    lane :commit_beta_version do
+        version = get_version_number(
+                                     target: "#{project_scheme}",
+                                     xcodeproj: "#{xcodeproj}",
+                                     )
+                                     sh "git commit -am 'Fabric Beta version: #{version}'"
+                                     sh "git tag -a v#{version} -m 'Fabric Beta'"
+                                     sh "git push"
+    end
+    
+    desc "Generate a custom icon overlay"
+    private_lane :custom_overlay do
+        git_commit = last_git_commit[:abbreviated_commit_hash]
+        get_version_number
+        version_number = lane_context[SharedValues::VERSION_NUMBER]
+        badge(
+              shield: "#{version_number}-#{git_commit}-blue",
+              alpha: true
+              )
+    end
+    
+    lane :fabric_beta do
+        increment_build_and_version_numbers
+        archive_adhoc
+        #refresh_dsyms
+        upload_to_crashlytics
+        commit_beta_version
+        custom_overlay
+    end
+end

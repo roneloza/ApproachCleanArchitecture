@@ -1,0 +1,12 @@
+git_url("git@github.com:roneloza/ApproachCleanArchitecture.git")
+
+storage_mode("git")
+
+type("development") # The default type, can be: appstore, adhoc, enterprise or development
+
+app_identifier 'test.mambo.fastlaneDemo'
+username "rone.loza@mambo.pe" #This will be the git username
+shallow_clone true
+force_for_new_devices true
+ENV["FASTLANE_PASSWORD"] = "mambo2017" #Password to access git repo.
+ENV["MATCH_PASSWORD"] = "mambo2017" #Password for the .p12 files saved in git repo.
