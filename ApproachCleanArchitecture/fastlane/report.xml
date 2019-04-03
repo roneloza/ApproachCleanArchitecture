@@ -5,129 +5,122 @@
     
     
       
-      <testcase classname="fastlane.lanes" name="00: Verifying fastlane version" time="0.012425">
+      <testcase classname="fastlane.lanes" name="00: Verifying fastlane version" time="0.013346">
         
       </testcase>
     
       
-      <testcase classname="fastlane.lanes" name="01: default_platform" time="0.003765">
+      <testcase classname="fastlane.lanes" name="01: default_platform" time="0.004034">
         
       </testcase>
     
       
-      <testcase classname="fastlane.lanes" name="02: cocoapods" time="9.818573">
+      <testcase classname="fastlane.lanes" name="02: cocoapods" time="10.43689">
         
       </testcase>
     
       
-      <testcase classname="fastlane.lanes" name="03: Switch to ios increment_build_and_version_numbers lane" time="0.009792">
+      <testcase classname="fastlane.lanes" name="03: Switch to ios increment_build_and_version_numbers lane" time="0.015148">
         
       </testcase>
     
       
-      <testcase classname="fastlane.lanes" name="04: get_info_plist_value" time="0.01222">
+      <testcase classname="fastlane.lanes" name="04: get_info_plist_value" time="0.015954">
         
       </testcase>
     
       
-      <testcase classname="fastlane.lanes" name="05: get_build_number" time="0.691351">
+      <testcase classname="fastlane.lanes" name="05: get_build_number" time="1.679058">
         
       </testcase>
     
       
-      <testcase classname="fastlane.lanes" name="06: increment_build_number" time="2.136765">
+      <testcase classname="fastlane.lanes" name="06: increment_build_number" time="3.132281">
         
       </testcase>
     
       
-      <testcase classname="fastlane.lanes" name="07: get_build_number" time="0.610416">
+      <testcase classname="fastlane.lanes" name="07: get_build_number" time="0.660968">
         
       </testcase>
     
       
-      <testcase classname="fastlane.lanes" name="08: get_version_number" time="0.223779">
+      <testcase classname="fastlane.lanes" name="08: get_version_number" time="0.670192">
         
       </testcase>
     
       
-      <testcase classname="fastlane.lanes" name="09: set_info_plist_value" time="0.012159">
+      <testcase classname="fastlane.lanes" name="09: set_info_plist_value" time="0.032248">
         
       </testcase>
     
       
-      <testcase classname="fastlane.lanes" name="10: Switch to ios archive_adhoc lane" time="0.004773">
+      <testcase classname="fastlane.lanes" name="10: Switch to ios archive_adhoc lane" time="0.026935">
         
       </testcase>
     
       
-      <testcase classname="fastlane.lanes" name="11: build_app" time="198.721438">
+      <testcase classname="fastlane.lanes" name="11: build_app" time="235.562358">
         
       </testcase>
     
       
-      <testcase classname="fastlane.lanes" name="12: Switch to ios upload_to_crashlytics lane" time="0.005852">
+      <testcase classname="fastlane.lanes" name="12: Switch to ios upload_to_crashlytics lane" time="0.009632">
         
       </testcase>
     
       
-      <testcase classname="fastlane.lanes" name="13: crashlytics" time="4.210464">
+      <testcase classname="fastlane.lanes" name="13: crashlytics" time="4.257085">
         
       </testcase>
     
       
-      <testcase classname="fastlane.lanes" name="14: upload_symbols_to_crashlytics" time="2.013967">
+      <testcase classname="fastlane.lanes" name="14: upload_symbols_to_crashlytics" time="2.04148">
         
       </testcase>
     
       
-      <testcase classname="fastlane.lanes" name="15: Switch to ios commit_beta_version lane" time="0.00503">
+      <testcase classname="fastlane.lanes" name="15: Switch to ios commit_beta_version lane" time="0.005016">
         
       </testcase>
     
       
-      <testcase classname="fastlane.lanes" name="16: get_build_number" time="0.464471">
+      <testcase classname="fastlane.lanes" name="16: get_build_number" time="0.533541">
         
       </testcase>
     
       
-      <testcase classname="fastlane.lanes" name="17: get_version_number" time="0.088627">
+      <testcase classname="fastlane.lanes" name="17: get_version_number" time="0.14147">
         
       </testcase>
     
       
-      <testcase classname="fastlane.lanes" name="18: git commit -am 'Fabric Beta version: 1.0.58'" time="0.197307">
+      <testcase classname="fastlane.lanes" name="18: git commit -am 'Fabric Beta version: 1.0.59'" time="0.131422">
         
       </testcase>
     
       
-      <testcase classname="fastlane.lanes" name="19: git tag -a v1.0.58 -m 'Fabric Beta'" time="0.020281">
+      <testcase classname="fastlane.lanes" name="19: git tag -a v1.0.59 -m 'Fabric Beta'" time="0.02909">
         
       </testcase>
     
       
-      <testcase classname="fastlane.lanes" name="20: git push" time="3.570565">
+      <testcase classname="fastlane.lanes" name="20: git push" time="3.357861">
         
       </testcase>
     
       
-      <testcase classname="fastlane.lanes" name="21: Switch to ios custom_overlay lane" time="0.004637">
+      <testcase classname="fastlane.lanes" name="21: Switch to ios custom_overlay lane" time="0.007287">
         
       </testcase>
     
       
-      <testcase classname="fastlane.lanes" name="22: last_git_commit" time="0.094564">
+      <testcase classname="fastlane.lanes" name="22: get_build_number" time="0.610347">
         
       </testcase>
     
       
-      <testcase classname="fastlane.lanes" name="23: get_version_number" time="0.079084">
-        
-      </testcase>
-    
-      
-      <testcase classname="fastlane.lanes" name="24: badge" time="12.286256">
-        
-          <failure message="/Users/roneloza/.fastlane/bin/bundle/lib/ruby/gems/2.2.0/gems/fastlane-2.119.0/fastlane/lib/fastlane/actions/actions_helper.rb:48:in `execute_action'&#10;/Users/roneloza/.fastlane/bin/bundle/lib/ruby/gems/2.2.0/gems/fastlane-2.119.0/fastlane/lib/fastlane/runner.rb:232:in `block in execute_action'&#10;/Users/roneloza/.fastlane/bin/bundle/lib/ruby/gems/2.2.0/gems/fastlane-2.119.0/fastlane/lib/fastlane/runner.rb:227:in `chdir'&#10;/Users/roneloza/.fastlane/bin/bundle/lib/ruby/gems/2.2.0/gems/fastlane-2.119.0/fastlane/lib/fastlane/runner.rb:227:in `execute_action'&#10;/Users/roneloza/.fastlane/bin/bundle/lib/ruby/gems/2.2.0/gems/fastlane-2.119.0/fastlane/lib/fastlane/runner.rb:157:in `trigger_action_by_name'&#10;/Users/roneloza/.fastlane/bin/bundle/lib/ruby/gems/2.2.0/gems/fastlane-2.119.0/fastlane/lib/fastlane/fast_file.rb:154:in `method_missing'&#10;Fastfile:113:in `block (2 levels) in parsing_binding'&#10;/Users/roneloza/.fastlane/bin/bundle/lib/ruby/gems/2.2.0/gems/fastlane-2.119.0/fastlane/lib/fastlane/lane.rb:33:in `call'&#10;/Users/roneloza/.fastlane/bin/bundle/lib/ruby/gems/2.2.0/gems/fastlane-2.119.0/fastlane/lib/fastlane/lane.rb:33:in `call'&#10;/Users/roneloza/.fastlane/bin/bundle/lib/ruby/gems/2.2.0/gems/fastlane-2.119.0/fastlane/lib/fastlane/runner.rb:204:in `try_switch_to_lane'&#10;/Users/roneloza/.fastlane/bin/bundle/lib/ruby/gems/2.2.0/gems/fastlane-2.119.0/fastlane/lib/fastlane/runner.rb:146:in `trigger_action_by_name'&#10;/Users/roneloza/.fastlane/bin/bundle/lib/ruby/gems/2.2.0/gems/fastlane-2.119.0/fastlane/lib/fastlane/fast_file.rb:154:in `method_missing'&#10;Fastfile:125:in `block (2 levels) in parsing_binding'&#10;/Users/roneloza/.fastlane/bin/bundle/lib/ruby/gems/2.2.0/gems/fastlane-2.119.0/fastlane/lib/fastlane/lane.rb:33:in `call'&#10;/Users/roneloza/.fastlane/bin/bundle/lib/ruby/gems/2.2.0/gems/fastlane-2.119.0/fastlane/lib/fastlane/lane.rb:33:in `call'&#10;/Users/roneloza/.fastlane/bin/bundle/lib/ruby/gems/2.2.0/gems/fastlane-2.119.0/fastlane/lib/fastlane/runner.rb:49:in `block in execute'&#10;/Users/roneloza/.fastlane/bin/bundle/lib/ruby/gems/2.2.0/gems/fastlane-2.119.0/fastlane/lib/fastlane/runner.rb:45:in `chdir'&#10;/Users/roneloza/.fastlane/bin/bundle/lib/ruby/gems/2.2.0/gems/fastlane-2.119.0/fastlane/lib/fastlane/runner.rb:45:in `execute'&#10;/Users/roneloza/.fastlane/bin/bundle/lib/ruby/gems/2.2.0/gems/fastlane-2.119.0/fastlane/lib/fastlane/lane_manager.rb:56:in `cruise_lane'&#10;/Users/roneloza/.fastlane/bin/bundle/lib/ruby/gems/2.2.0/gems/fastlane-2.119.0/fastlane/lib/fastlane/command_line_handler.rb:36:in `handle'&#10;/Users/roneloza/.fastlane/bin/bundle/lib/ruby/gems/2.2.0/gems/fastlane-2.119.0/fastlane/lib/fastlane/commands_generator.rb:108:in `block (2 levels) in run'&#10;/Users/roneloza/.fastlane/bin/bundle/lib/ruby/gems/2.2.0/gems/commander-fastlane-4.4.6/lib/commander/command.rb:178:in `call'&#10;/Users/roneloza/.fastlane/bin/bundle/lib/ruby/gems/2.2.0/gems/commander-fastlane-4.4.6/lib/commander/command.rb:178:in `call'&#10;/Users/roneloza/.fastlane/bin/bundle/lib/ruby/gems/2.2.0/gems/commander-fastlane-4.4.6/lib/commander/command.rb:153:in `run'&#10;/Users/roneloza/.fastlane/bin/bundle/lib/ruby/gems/2.2.0/gems/commander-fastlane-4.4.6/lib/commander/runner.rb:476:in `run_active_command'&#10;/Users/roneloza/.fastlane/bin/bundle/lib/ruby/gems/2.2.0/gems/fastlane-2.119.0/fastlane_core/lib/fastlane_core/ui/fastlane_runner.rb:76:in `run!'&#10;/Users/roneloza/.fastlane/bin/bundle/lib/ruby/gems/2.2.0/gems/commander-fastlane-4.4.6/lib/commander/delegates.rb:15:in `run!'&#10;/Users/roneloza/.fastlane/bin/bundle/lib/ruby/gems/2.2.0/gems/fastlane-2.119.0/fastlane/lib/fastlane/commands_generator.rb:333:in `run'&#10;/Users/roneloza/.fastlane/bin/bundle/lib/ruby/gems/2.2.0/gems/fastlane-2.119.0/fastlane/lib/fastlane/commands_generator.rb:41:in `start'&#10;/Users/roneloza/.fastlane/bin/bundle/lib/ruby/gems/2.2.0/gems/fastlane-2.119.0/fastlane/lib/fastlane/cli_tools_distributor.rb:119:in `take_off'&#10;/Users/roneloza/.fastlane/bin/bundle/lib/ruby/gems/2.2.0/gems/fastlane-2.119.0/bin/fastlane:23:in `&lt;top (required)&gt;'&#10;/Users/roneloza/.fastlane/bin/bundle/bin/fastlane:22:in `load'&#10;/Users/roneloza/.fastlane/bin/bundle/bin/fastlane:22:in `&lt;main&gt;'&#10;&#10;ERROR: Failed to build gem native extension.&#10;&#10;    current directory: /Users/roneloza/.fastlane/bin/bundle/lib/ruby/gems/2.2.0/gems/curb-0.9.9/ext&#10;/Users/roneloza/.fastlane/bin/bundle/bin/ruby -r ./siteconf20190403-67818-195spsu.rb extconf.rb&#10;checking for curl-config... yes&#10;checking for curlopt_tcp_keepalive... *** extconf.rb failed ***&#10;Could not create Makefile due to some reason, probably lack of necessary&#10;libraries and/or headers.  Check the mkmf.log file for more details.  You may&#10;need configuration options.&#10;&#10;Provided configuration options:&#10;	--with-opt-dir&#10;	--without-opt-dir&#10;	--with-opt-include&#10;	--without-opt-include=${opt-dir}/include&#10;	--with-opt-lib&#10;	--without-opt-lib=${opt-dir}/lib&#10;	--with-make-prog&#10;	--without-make-prog&#10;	--srcdir=.&#10;	--curdir&#10;	--ruby=/Users/roneloza/.fastlane/bin/bundle/bin/$(RUBY_BASE_NAME)&#10;	--with-curl-dir&#10;	--without-curl-dir&#10;	--with-curl-include&#10;	--without-curl-include=${curl-dir}/include&#10;	--with-curl-lib&#10;	--without-curl-lib=${curl-dir}/lib&#10;/Users/roneloza/.fastlane/bin/bundle/lib/ruby/2.2.0/mkmf.rb:456:in `try_do': The compiler failed to generate an executable file. (RuntimeError)&#10;You have to install development tools first.&#10;	from /Users/roneloza/.fastlane/bin/bundle/lib/ruby/2.2.0/mkmf.rb:571:in `block in try_compile'&#10;	from /Users/roneloza/.fastlane/bin/bundle/lib/ruby/2.2.0/mkmf.rb:524:in `with_werror'&#10;	from /Users/roneloza/.fastlane/bin/bundle/lib/ruby/2.2.0/mkmf.rb:571:in `try_compile'&#10;	from extconf.rb:52:in `block in have_constant'&#10;	from /Users/roneloza/.fastlane/bin/bundle/lib/ruby/2.2.0/mkmf.rb:911:in `block in checking_for'&#10;	from /Users/roneloza/.fastlane/bin/bundle/lib/ruby/2.2.0/mkmf.rb:351:in `block (2 levels) in postpone'&#10;	from /Users/roneloza/.fastlane/bin/bundle/lib/ruby/2.2.0/mkmf.rb:321:in `open'&#10;	from /Users/roneloza/.fastlane/bin/bundle/lib/ruby/2.2.0/mkmf.rb:351:in `block in postpone'&#10;	from /Users/roneloza/.fastlane/bin/bundle/lib/ruby/2.2.0/mkmf.rb:321:in `open'&#10;	from /Users/roneloza/.fastlane/bin/bundle/lib/ruby/2.2.0/mkmf.rb:347:in `postpone'&#10;	from /Users/roneloza/.fastlane/bin/bundle/lib/ruby/2.2.0/mkmf.rb:910:in `checking_for'&#10;	from extconf.rb:44:in `have_constant'&#10;	from extconf.rb:62:in `&lt;main&gt;'&#10;&#10;To see why this extension failed to compile, please check the mkmf.log which can be found here:&#10;&#10;  /Users/roneloza/.fastlane/bin/bundle/lib/ruby/gems/2.2.0/extensions/x86_64-darwin-15/2.2.0-static/curb-0.9.9/mkmf.log&#10;&#10;extconf failed, exit code 1&#10;&#10;Gem files will remain installed in /Users/roneloza/.fastlane/bin/bundle/lib/ruby/gems/2.2.0/gems/curb-0.9.9 for inspection.&#10;Results logged to /Users/roneloza/.fastlane/bin/bundle/lib/ruby/gems/2.2.0/extensions/x86_64-darwin-15/2.2.0-static/curb-0.9.9/gem_make.out&#10;" />
+      <testcase classname="fastlane.lanes" name="23: get_version_number" time="0.081767">
         
       </testcase>
     
