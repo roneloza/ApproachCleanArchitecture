@@ -98,7 +98,7 @@ platform :ios do
                                      target: "#{project_scheme}",
                                      xcodeproj: "#{xcodeproj}"
                                      )
-        commitVersion = "#{version}.#{build_number}”
+        commitVersion = "#{version}.#{build_number}"
                                      
         sh "git commit -am 'Fabric Beta version: #{commitVersion}'"
         sh "git tag -a v#{commitVersion} -m 'Fabric Beta'"
@@ -107,11 +107,17 @@ platform :ios do
     
     desc "Generate a custom icon overlay"
     private_lane :custom_overlay do
-        git_commit = last_git_commit[:abbreviated_commit_hash]
-        get_version_number
-        version_number = lane_context[SharedValues::VERSION_NUMBER]
-        badge(
-              shield: "#{version_number}-#{git_commit}-blue",
+        
+        build_number = get_build_number
+        
+        version = get_version_number(
+                                     target: "#{project_scheme}",
+                                     xcodeproj: "#{xcodeproj}"
+                                     )
+        commitVersion = "#{version}.#{build_number}"
+        
+        add_badge(
+              shield: "Version-#{commitVersion}-blue",
               alpha: true
               )
     end
