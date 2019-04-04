@@ -41,6 +41,26 @@ fastlane ios upload_to_crashlytics
 fastlane ios commit_beta_version
 ```
 
+### ios custom_overlay
+```
+fastlane ios custom_overlay
+```
+Generate a custom icon overlay
+### ios test
+```
+fastlane ios test
+```
+
+### ios dark
+```
+fastlane ios dark
+```
+
+### ios shield
+```
+fastlane ios shield
+```
+
 ### ios fabric_beta
 ```
 fastlane ios fabric_beta

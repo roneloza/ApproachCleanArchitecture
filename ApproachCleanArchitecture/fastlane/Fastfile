@@ -52,8 +52,8 @@ platform :ios do
         build_number = get_build_number
         version = get_version_number
         
-        formerVersion = "#{version}-b#{formerNumber}”
-        commitVersion = "#{version}-b#{build_number}”
+        formerVersion = "#{version}-b#{formerNumber}"
+        commitVersion = "#{version}-b#{build_number}"
         
         set_info_plist_value(path: "#{project_info_plist}", key: "CFBundleVersion", value: build_number)
     end
@@ -106,7 +106,7 @@ platform :ios do
     end
     
     desc "Generate a custom icon overlay"
-    private_lane :custom_overlay do
+    lane :custom_overlay do
         
         build_number = get_build_number
         
@@ -116,7 +116,7 @@ platform :ios do
                                      )
         commitVersion = "#{version}.#{build_number}"
         
-        badge(dark: true)
+        add_badge(dark: true)
        
     end
     
@@ -126,6 +126,6 @@ platform :ios do
         #refresh_dsyms
         upload_to_crashlytics
         commit_beta_version
-        custom_overlay
+        #custom_overlay
     end
 end
