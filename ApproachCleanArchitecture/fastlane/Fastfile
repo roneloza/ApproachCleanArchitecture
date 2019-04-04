@@ -141,8 +141,8 @@ platform :ios do
         increment_build_and_version_numbers
         archive_adhoc
         #refresh_dsyms
-        upload_to_crashlytics
         commit_beta_version
+        upload_to_crashlytics
         #custom_overlay
     end
 end
