@@ -116,7 +116,7 @@ platform :ios do
                                      )
         commitVersion = "#{version}.#{build_number}"
         
-        add_badge(dark: true)
+        badge(dark: true)
        
     end
     
