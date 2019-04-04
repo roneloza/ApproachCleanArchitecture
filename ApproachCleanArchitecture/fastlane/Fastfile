@@ -116,10 +116,8 @@ platform :ios do
                                      )
         commitVersion = "#{version}.#{build_number}"
         
-        add_badge(
-                  shield: "Version-#{commitVersion}-blue",
-                  alpha: true
-              )
+        add_badge(dark: true)
+       
     end
     
     lane :fabric_beta do
