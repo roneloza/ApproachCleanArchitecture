@@ -46,21 +46,6 @@ fastlane ios commit_beta_version
 fastlane ios custom_overlay
 ```
 Generate a custom icon overlay
-### ios test
-```
-fastlane ios test
-```
-
-### ios dark
-```
-fastlane ios dark
-```
-
-### ios shield
-```
-fastlane ios shield
-```
-
 ### ios fabric_beta
 ```
 fastlane ios fabric_beta

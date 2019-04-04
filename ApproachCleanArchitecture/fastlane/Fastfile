@@ -82,7 +82,24 @@ platform :ios do
     
     lane :upload_to_crashlytics do
         
+        build_number = get_build_number
+        
+        version = get_version_number(
+                                     target: "#{project_scheme}",
+                                     xcodeproj: "#{xcodeproj}"
+                                     )
+        commitVersion = "#{version}.#{build_number}"
+                                     
+        commitMessage = changelog_from_git_commits(
+                                                   pretty: "- %s",
+                                                   between: ["v#{version}/iosRelease/#{commitVersion}", "HEAD"]
+                                                   )
+                                                   
         crashlytics(
+                    groups: "Testers",
+                    notifications: true,
+                    notes: "#{project_scheme}\n#{commitMessage}",
+                    #ipa_path: "./fastlane/ipa/#{project_output_name}.ipa",
                     api_token: "#{crashlytics_api_token}",
                     build_secret: "#{crashlytics_build_secret}",
                     emails: "#{crashlytics_emails}"
