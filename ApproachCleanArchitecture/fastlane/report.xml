@@ -5,122 +5,122 @@
     
     
       
-      <testcase classname="fastlane.lanes" name="00: Verifying fastlane version" time="0.019314">
+      <testcase classname="fastlane.lanes" name="00: Verifying fastlane version" time="0.012355">
         
       </testcase>
     
       
-      <testcase classname="fastlane.lanes" name="01: default_platform" time="0.003906">
+      <testcase classname="fastlane.lanes" name="01: default_platform" time="0.003912">
         
       </testcase>
     
       
-      <testcase classname="fastlane.lanes" name="02: cocoapods" time="11.662609">
+      <testcase classname="fastlane.lanes" name="02: cocoapods" time="9.53281">
         
       </testcase>
     
       
-      <testcase classname="fastlane.lanes" name="03: Switch to ios increment_build_and_version_numbers lane" time="0.006906">
+      <testcase classname="fastlane.lanes" name="03: Switch to ios increment_build_and_version_numbers lane" time="0.00819">
         
       </testcase>
     
       
-      <testcase classname="fastlane.lanes" name="04: get_info_plist_value" time="0.008722">
+      <testcase classname="fastlane.lanes" name="04: get_info_plist_value" time="0.008911">
         
       </testcase>
     
       
-      <testcase classname="fastlane.lanes" name="05: get_build_number" time="0.839694">
+      <testcase classname="fastlane.lanes" name="05: get_build_number" time="0.475634">
         
       </testcase>
     
       
-      <testcase classname="fastlane.lanes" name="06: increment_build_number" time="1.77236">
+      <testcase classname="fastlane.lanes" name="06: increment_build_number" time="1.932511">
         
       </testcase>
     
       
-      <testcase classname="fastlane.lanes" name="07: get_build_number" time="0.673971">
+      <testcase classname="fastlane.lanes" name="07: get_build_number" time="0.753129">
         
       </testcase>
     
       
-      <testcase classname="fastlane.lanes" name="08: get_version_number" time="0.28545">
+      <testcase classname="fastlane.lanes" name="08: get_version_number" time="0.339322">
         
       </testcase>
     
       
-      <testcase classname="fastlane.lanes" name="09: set_info_plist_value" time="0.033999">
+      <testcase classname="fastlane.lanes" name="09: set_info_plist_value" time="0.024794">
         
       </testcase>
     
       
-      <testcase classname="fastlane.lanes" name="10: Switch to ios archive_adhoc lane" time="0.005486">
+      <testcase classname="fastlane.lanes" name="10: Switch to ios archive_adhoc lane" time="0.008085">
         
       </testcase>
     
       
-      <testcase classname="fastlane.lanes" name="11: build_app" time="221.546803">
+      <testcase classname="fastlane.lanes" name="11: build_app" time="218.316468">
         
       </testcase>
     
       
-      <testcase classname="fastlane.lanes" name="12: Switch to ios upload_to_crashlytics lane" time="0.006666">
+      <testcase classname="fastlane.lanes" name="12: Switch to ios upload_to_crashlytics lane" time="0.010733">
         
       </testcase>
     
       
-      <testcase classname="fastlane.lanes" name="13: crashlytics" time="4.578603">
+      <testcase classname="fastlane.lanes" name="13: crashlytics" time="4.732721">
         
       </testcase>
     
       
-      <testcase classname="fastlane.lanes" name="14: upload_symbols_to_crashlytics" time="2.204235">
+      <testcase classname="fastlane.lanes" name="14: upload_symbols_to_crashlytics" time="2.329373">
         
       </testcase>
     
       
-      <testcase classname="fastlane.lanes" name="15: Switch to ios commit_beta_version lane" time="0.00401">
+      <testcase classname="fastlane.lanes" name="15: Switch to ios commit_beta_version lane" time="0.007292">
         
       </testcase>
     
       
-      <testcase classname="fastlane.lanes" name="16: get_build_number" time="0.510523">
+      <testcase classname="fastlane.lanes" name="16: get_build_number" time="0.747963">
         
       </testcase>
     
       
-      <testcase classname="fastlane.lanes" name="17: get_version_number" time="0.129974">
+      <testcase classname="fastlane.lanes" name="17: get_version_number" time="0.142508">
         
       </testcase>
     
       
-      <testcase classname="fastlane.lanes" name="18: git commit -am 'Fabric Beta version: 1.0.61'" time="0.207338">
+      <testcase classname="fastlane.lanes" name="18: git commit -am 'Fabric Beta version: 1.0.62'" time="0.217716">
         
       </testcase>
     
       
-      <testcase classname="fastlane.lanes" name="19: git tag -a v1.0.61 -m 'Fabric Beta'" time="0.023545">
+      <testcase classname="fastlane.lanes" name="19: git tag -a v1.0.62 -m 'Fabric Beta'" time="0.052844">
         
       </testcase>
     
       
-      <testcase classname="fastlane.lanes" name="20: git push" time="4.202268">
+      <testcase classname="fastlane.lanes" name="20: git push" time="3.309861">
         
       </testcase>
     
       
-      <testcase classname="fastlane.lanes" name="21: Switch to ios custom_overlay lane" time="0.004694">
+      <testcase classname="fastlane.lanes" name="21: Switch to ios custom_overlay lane" time="0.068262">
         
       </testcase>
     
       
-      <testcase classname="fastlane.lanes" name="22: get_build_number" time="0.475219">
+      <testcase classname="fastlane.lanes" name="22: get_build_number" time="1.140159">
         
       </testcase>
     
       
-      <testcase classname="fastlane.lanes" name="23: get_version_number" time="0.075604">
+      <testcase classname="fastlane.lanes" name="23: get_version_number" time="0.191793">
         
       </testcase>
     
