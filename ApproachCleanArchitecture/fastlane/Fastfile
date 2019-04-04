@@ -116,7 +116,7 @@ platform :ios do
                                      )
         commitVersion = "#{version}.#{build_number}"
         
-        badge(
+        add_badge(
                   shield: "Version-#{commitVersion}-blue",
                   alpha: true
               )
